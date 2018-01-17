@@ -57,7 +57,7 @@ SYNTAX HIGHLIGHTED CODE BLOCK
 
 ```
 <img src="https://github.com/waowao/waowao/blob/master/2018.jpg" width = "600" height = "400" alt="2018" align=center />
- 
+<img src="https://github.com/waowao/waowao/blob/master/2018.jpg" width="50%" height="50%" alt="2018" align=center />
 FOR MORE DETAILS SEE [GITHUB FLAVORED MARKDOWN](HTTPS://GUIDES.GITHUB.COM/FEATURES/MASTERING-MARKDOWN/).
 
 ### JEKYLL THEMES
