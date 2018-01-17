@@ -56,10 +56,8 @@ SYNTAX HIGHLIGHTED CODE BLOCK
 [LINK](URL) AND ![IMAGE](SRC)
 
 ```
-<img src="./b.png" width = "300" height = "200" alt="b" align=center />
-<img src="./n.png" width = "300" height = "200" alt="north" align=center />
-<img src="./s.png" width = "300" height = "200" alt="south" align=center />
-<img src="./cen.png" width = "300" height = "200" alt="center" align=center />
+<img src="https://github.com/waowao/waowao/blob/master/2018.jpg" width = "600" height = "400" alt="2018" align=center />
+ 
 FOR MORE DETAILS SEE [GITHUB FLAVORED MARKDOWN](HTTPS://GUIDES.GITHUB.COM/FEATURES/MASTERING-MARKDOWN/).
 
 ### JEKYLL THEMES
