@@ -1,53 +1,52 @@
-## Welcome to WAOWAO GitHub Pages
+## WELCOME TO WAOWAO GITHUB PAGES
 
-Thanks Github to this space. Here are some work we did. 
+THANKS GITHUB TO THIS SPACE. HERE ARE SOME WORK WE DID. 
 
-You can use the [editor on GitHub](https://github.com/waowao/waowao.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+```MARKDOWN
+YOU CAN USE THE [EDITOR ON GITHUB](HTTPS://GITHUB.COM/WAOWAO/WAOWAO.GITHUB.IO/EDIT/MASTER/README.MD) TO MAINTAIN AND PREVIEW THE CONTENT FOR YOUR WEBSITE IN MARKDOWN FILES.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+WHENEVER YOU COMMIT TO THIS REPOSITORY, GITHUB PAGES WILL RUN [JEKYLL](HTTPS://JEKYLLRB.COM/) TO REBUILD THE PAGES IN YOUR SITE, FROM THE CONTENT IN YOUR MARKDOWN FILES.
+```
+### ANALYSIS
 
-### Analysis
+ANALYSIS IS A BASIC TASK IN ENGINEERING DESIGN. 
 
-Analysis is a basic task in Engineering Design. 
+- LINEAR ANALYSIS
+- 1 STRUCTURE ANALYSIS
+- 2 STRUCTURE ANALYSIS
 
--
-- 1 Structure Analysis
-- 2 Structure Analysis
+- 1 STRUCTURE STATIC ANALYSIS
+- 2 STRUCTURE DYNAMIC ANALYSIS
+- 3 NON-LINEAR ANALYSIS
 
-- 1 Structure Static Analysis
-- 2 Structure Dynamic Analysis
-- 3 Non-linear Analysis
+AND EASY-TO-USE SYNTAX FOR STYLING YOUR WRITING. IT INCLUDES CONVENTIONS FOR
 
-and easy-to-use syntax for styling your writing. It includes conventions for
+```MARKDOWN
+SYNTAX HIGHLIGHTED CODE BLOCK
 
-```markdown
-Syntax highlighted code block
-
-# Analysis
-## 1 Structure Analysis
-## 2 Structure Analysis
-
-### 1 Structure Static Analysis
-### 2 Structure Dynamic Analysis
-### 3 Non-linear Analysis
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+# HEADER 1
+## HEADER 2  
+### HEADER 3
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+```MARKDOWN
+- BULLETED
+- LIST
 
-### Jekyll Themes
+1. NUMBERED
+2. LIST
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/waowao/waowao.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+**BOLD** AND _ITALIC_ AND `CODE` TEXT
 
-### Support or Contact
+[LINK](URL) AND ![IMAGE](SRC)
+```
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+FOR MORE DETAILS SEE [GITHUB FLAVORED MARKDOWN](HTTPS://GUIDES.GITHUB.COM/FEATURES/MASTERING-MARKDOWN/).
+
+### JEKYLL THEMES
+
+YOUR PAGES SITE WILL USE THE LAYOUT AND STYLES FROM THE JEKYLL THEME YOU HAVE SELECTED IN YOUR [REPOSITORY SETTINGS](HTTPS://GITHUB.COM/WAOWAO/WAOWAO.GITHUB.IO/SETTINGS). THE NAME OF THIS THEME IS SAVED IN THE JEKYLL `_CONFIG.YML` CONFIGURATION FILE.
+
+### SUPPORT OR CONTACT
+
+HAVING TROUBLE WITH PAGES? CHECK OUT OUR [DOCUMENTATION](HTTPS://HELP.GITHUB.COM/CATEGORIES/GITHUB-PAGES-BASICS/) OR [CONTACT SUPPORT](HTTPS://GITHUB.COM/CONTACT) AND WE’LL HELP YOU SORT IT OUT.
