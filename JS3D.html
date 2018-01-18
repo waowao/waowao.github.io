@@ -1,0 +1,812 @@
+<!DOCTYPE HTML>
+<html>
+<header>
+    <meta charset="utf-8">
+    <title>js框架</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/ace.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/font-awesome.min.css"><!--图标字体-->
+    <link rel="stylesheet" type="text/css" href="static/css/prettify.css"><!--代码美化-->
+    <style>
+        body {
+            position: relative;
+        }
+
+        .nav>li>a {
+            min-width: 180px;
+        }
+
+        .navbar .navbar-nav>li {
+            border-width: 0!important;
+        }
+
+        .nav>.active>a {
+            font-weight: 700;
+            color: #563d7c;
+            background-color: transparent;
+        }
+
+        .page-header h1 {
+            font-size: 40px;
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        #scrollUp {
+            background-color: #777;
+            color: #eee;
+            font-size: 40px;
+            line-height: 1;
+            text-align: center;
+            text-decoration: none;
+            bottom: 20px;
+            right: 20px;
+            overflow: hidden;
+            width: 46px;
+            height: 46px;
+            border: none;
+            opacity: .8
+        }
+
+        #scrollUp:hover {
+            background-color: #333
+        }
+
+        @media screen and (min-width: 992px) {
+            #scrollUp {
+                bottom:100px
+            }
+        }
+
+        .error-input {
+            border-color: red!important;
+        }
+
+        .yw-error-input {
+            border-color: #DD5A43!important;
+        }
+    </style>
+</header>
+<body data-spy="scroll" data-target="#side_menu">
+<div class="navbar navbar-static-top-nav hidden-sm">
+    <div class="container">
+        <div class="navbar-header">
+            <nav class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="./代码规范文档.html" class="align-center">代码规范文档</a></li>
+                    <li><a href="./交互文档.html" class="align-center">交互文档</a></li>
+                    <li class="active open"><a href="./js框架.html" class="align-center">js框架</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="main-container">
+    <div class="page-header">
+        <h1>验证表单</h1>
+    </div>
+    <div class="page-content">
+        <div class="row">
+        <div class="col-md-3">
+            <nav class="hidden-print hidden-xs hidden-sm affix-top" id="side_menu">
+                <ul class="nav">
+                    <li>
+                        <a href="#func">扩展函数</a>
+                        <ul class="nav">
+                            <li><a href="#func-desc">jQuery扩展函数</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#general">验证表单</a>
+                        <ul class="nav">
+                            <li><a href="#general-demo">Demo</a></li>
+                            <li><a href="#general-param">参数</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-md-9">
+            <h2><a id="func"></a>工具函数</h2>
+            <hr>
+            <div class="row" id="func-desc">
+                <div class="widget-box col-sm-10">
+                    <div class="widget-header widget-header-flat">
+                        <h4 class="widget-title smaller">jQuery扩展函数</h4>
+                    </div>
+                    <div class="widget-body">
+                        <div class="widget-main">
+                            <blockquote>
+                                <p class="lighter line-height-125 text-primary">
+                                    以下为工具函数列表：
+                                </p>
+                            </blockquote>
+                            <table class="table table-bordered table-striped js-options-table">
+                                <tr>
+                                    <th>方法</th>
+                                    <th>参数</th>
+                                    <th>描述</th>
+                                </tr>
+                                <tr>
+                                    <td>isEmail</td>
+                                    <td>value：要验证的值</td>
+                                    <td>验证是否为邮箱</td>
+                                </tr>
+                                <tr>
+                                    <td>isPhone</td>
+                                    <td>value：要验证的值</td>
+                                    <td>验证是否为电话</td>
+                                </tr>
+                                <tr>
+                                    <td>isMobile</td>
+                                    <td>value：要验证的值</td>
+                                    <td>验证是否为手机号（中国大陆）</td>
+                                </tr>
+                                <tr>
+                                    <td>isIDCard</td>
+                                    <td>value：要验证的值</td>
+                                    <td>验证是否为身份证号（中国大陆）</td>
+                                </tr>
+                                <tr>
+                                    <td>isMoney</td>
+                                    <td>
+                                        <div>value：要验证的值</div>
+                                        <div>maxValue：最大的价格</div>
+                                    </td>
+                                    <td>验证是否为价格</td>
+                                </tr>
+                                <tr>
+                                    <td>lpad</td>
+                                    <td>
+                                        <div>value：要补全的字符串</div>
+                                        <div>length：补全到的长度，超过当前字符串则直接返回原字符串</div>
+                                        <div>char：用于补全的字符，默认为空格</div>
+                                    </td>
+                                    <td>左补全字符串</td>
+                                </tr>
+                                <tr>
+                                    <td>min</td>
+                                    <td>任意数量参数</td>
+                                    <td>返回最小值，用法同php的min函数</td>
+                                </tr>
+                                <tr>
+                                    <td>max</td>
+                                    <td>任意数量参数</td>
+                                    <td>返回最大值，用法同php的max函数</td>
+                                </tr>
+                                <tr>
+                                    <td>rand</td>
+                                    <td>
+                                        <div>min：最小值，不传时默认为0</div>
+                                        <div>max：最大值，不传时默认为1000</div>
+                                    </td>
+                                    <td>返回最小值和最大值之间的随机整数</td>
+                                </tr>
+                                <tr>
+                                    <td>date</td>
+                                    <td>
+                                        <div>format：时间格式</div>
+                                        <div>timestamp：时间戳，不传时默认使用当前时间</div>
+                                    </td>
+                                    <td>返回指定格式的日期，date，目前支持的格式包括Y, y, m, d, H, i, s, v</td>
+                                </tr>
+                                <tr>
+                                    <td>dateDiff</td>
+                                    <td>
+                                        <div>day1：时间1，可传时间戳、字符串、Date对象</div>
+                                        <div>day2：时间2，可传时间戳、字符串、Date对象</div>
+                                        <div>full：是否返回完整数据，不传时默认返回以天为单位的时间差（向下取整）。若为true返回的格式包括w：星期, d：天, h：小时, m：分钟, s：秒, v：毫秒, t：时间戳之差</div>
+                                    </td>
+                                    <td>返回指定两个日期的时间差</td>
+                                </tr>
+                                <tr>
+                                    <td>dateAdd</td>
+                                    <td>
+                                        <div>date：起始时间</div>
+                                        <div>dayDiff：相差天数</div>
+                                    </td>
+                                    <td>获取距离date间隔为dayDiff天的日期</td>
+                                </tr>
+                                <tr>
+                                    <td>getParam</td>
+                                    <td>
+                                        <div>key：参数键</div>
+                                    </td>
+                                    <td>获取url请求参数（location.search）</td>
+                                </tr>
+                                <tr>
+                                    <td>setParam</td>
+                                    <td>
+                                        <div>key：参数键</div>
+                                        <div>value：参数值</div>
+                                    </td>
+                                    <td>设置url请求参数（location.search）</td>
+                                </tr>
+                                <tr>
+                                    <td>getHash</td>
+                                    <td>
+                                        <div>key：哈希键</div>
+                                    </td>
+                                    <td>获取url请求哈希（location.hash）</td>
+                                </tr>
+                                <tr>
+                                    <td>setHash</td>
+                                    <td>
+                                        <div>key：哈希键</div>
+                                        <div>value：哈希值</div>
+                                    </td>
+                                    <td>设置url请求哈希（location.hash）</td>
+                                </tr>
+                            </table>
+                            <blockquote>
+                                <p>
+                                    更加详细的内容，请查看<a href="static/js/lib.js" target="_blank">源码</a>
+                                </p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2><a id="general"></a>验证表单</h2>
+            <hr>
+            <div class="row" id="general-demo">
+                <div class="widget-box col-sm-10">
+                    <div class="widget-header widget-header-flat">
+                        <h4 class="widget-title smaller">Demo</h4>
+                    </div>
+                    <div class="widget-body">
+                        <div class="widget-main">
+                            <h3>非气泡提示模式示例（默认）</h3>
+                            <pre class="prettyprint linenums">
+&lt;!-- 通过添加yw-form类使组件自动调用 --&gt;
+&lt;form class="yw-form"&gt;
+    &lt;!-- 使用规则，错误提示默认，展示位置默认在同级yw-error-input类的标签内 --&gt;
+    &lt;div&gt;
+        &lt;input type="text" class="yw-validator" data-rule="required"&gt;
+        &lt;span class="yw-error-input"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+
+    &lt;!-- 指定错误提示和展示位置，寻找yw-valid-wrap类祖先元素下的yw-error-input展示 --&gt;
+    &lt;div class="yw-valid-wrap"&gt;
+        &lt;div&gt;
+            &lt;input type="text" class="yw-validator" data-rule="required" data-msg="请输入内容"&gt;
+        &lt;/div&gt;
+        &lt;span class="yw-error-input"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+
+    &lt;!-- 多条目验证 --&gt;
+    &lt;div class="yw-valid-wrap"&gt;
+        &lt;input type="text" class="yw-validator" data-rule="required|length:6,16|number"
+            data-msg="请填写电话号码|电话号码必须为%d~%d位"&gt;
+        &lt;span class="yw-error-input"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+
+    &lt;!-- 复选组的验证 --&gt;
+    &lt;div class="yw-valid-wrap"&gt;
+        &lt;div class="yw-validator" data-rule="checked:2"&gt;
+            &lt;input type="checkbox" value="1"/&gt; 标签1
+            &lt;input type="checkbox" value="2"/&gt; 标签2
+            &lt;input type="checkbox" value="3"/&gt; 标签3
+            &lt;input type="checkbox" value="4"/&gt; 标签4
+            &lt;input type="checkbox" value="5"/&gt; 标签5
+        &lt;/div&gt;
+        &lt;span class="yw-error-input"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+</pre>
+                            <div class="space"></div>
+                            <form method="post" class="row yw-form" id="demo1">
+                                <div class="form-group col-xs-12">
+                                    姓名：<input type="text" class="yw-validator align-middle inline input-xlarge"
+                                              data-rule="required" data-msg="此项不能为空">
+                                    <span class="yw-error-input"></span>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    电话：<input type="text" class="yw-validator align-middle inline input-xlarge"
+                                              data-rule="required|length:6,16|number" data-msg="请填写电话号码|电话号码必须为%d~%d位">
+                                    <span class="yw-error-input"></span>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    邮编：<input type="text" class="yw-validator align-middle inline input-xxlarge"
+                                              data-rule="length:6," data-msg="长度不能少于%d">
+                                    <span class="yw-error-input"></span>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    价格：<input type="text" class="yw-validator align-middle inline input-xlarge"
+                                              data-rule="min:0.00" data-msg="价格必须大于0" value="-5">
+                                    <span class="yw-error-input"></span>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    分类：
+                                    <input type="text" class="yw-validator align-middle inline input-large"
+                                              data-rule="max:3" data-msg="不能大于%d" value="12">
+                                    <span class="yw-error-input"></span>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    等级：
+                                    <div class="yw-validator inline" data-rule="selected">
+                                        <select class="input-large">
+                                            <option value="">请选择</option>
+                                            <option value="1">Level 1</option>
+                                            <option value="2">Level 2</option>
+                                            <option value="3">Level 3</option>
+                                        </select>
+                                    </div>
+                                    <span class="yw-error-input"></span>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    编码：<input type="text" class="yw-validator align-middle inline input-xlarge"
+                                              data-rule="number">
+                                    <span class="yw-error-input"></span>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    邮箱：<input type="text" class="yw-validator align-middle inline input-xlarge"
+                                              data-rule="email">
+                                    <span class="yw-error-input"></span>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    规则：<input type="text" class="yw-validator align-middle inline input-xlarge"
+                                              data-rule="func:valid" data-msg="请输入一个偶数">
+                                    <span class="yw-error-input"></span>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    日期：
+                                    <div class="yw-validator inline" data-rule="checked:2">
+                                        <div class="form-group radio-inline no-padding">
+                                            <label>
+                                                <input type="checkbox" class="ace">
+                                                <span class="lbl"> 星期一</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-group radio-inline">
+                                            <label>
+                                                <input type="checkbox" class="ace">
+                                                <span class="lbl"> 星期二</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-group radio-inline">
+                                            <label>
+                                                <input type="checkbox" class="ace">
+                                                <span class="lbl"> 星期三</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-group radio-inline">
+                                            <label>
+                                                <input type="checkbox" class="ace">
+                                                <span class="lbl"> 星期四</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-group radio-inline">
+                                            <label>
+                                                <input type="checkbox" class="ace">
+                                                <span class="lbl"> 星期五</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-group radio-inline">
+                                            <label>
+                                                <input type="checkbox" class="ace">
+                                                <span class="lbl"> 星期六</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-group radio-inline">
+                                            <label>
+                                                <input type="checkbox" class="ace">
+                                                <span class="lbl"> 星期日</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <span class="yw-error-input"></span>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    性别：
+                                    <div class="yw-validator inline" data-rule="checked:1" data-msg="请选择性别">
+                                        <div class="form-group radio-inline no-padding">
+                                            <label>
+                                                <input name="sex" type="radio" class="ace">
+                                                <span class="lbl"> 男</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-group radio-inline">
+                                            <label>
+                                                <input name="sex" type="radio" class="ace">
+                                                <span class="lbl"> 女</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-group radio-inline">
+                                            <label>
+                                                <input name="sex" type="radio" class="ace">
+                                                <span class="lbl"> 人妖</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <span class="yw-error-input"></span>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    描述：<textarea class="yw-validator align-middle inline input-xxlarge" rows="5"
+                                                 data-rule="required"></textarea>
+                                    <span class="yw-error-input"></span>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    <button type="submit" class="btn btn-info btn-sm">
+                                        <i class="ace-icon fa fa-search"></i>
+                                        搜索
+                                    </button>
+                                </div>
+                            </form>
+                            <h3>气泡提示模式示例</h3>
+                            <pre class="prettyprint linenums">
+&lt;form id="demo"&gt;
+    &lt;!-- 使用规则，错误提示默认，展示位置默认在右方 --&gt;
+    &lt;input type="text" class="yw-validator" data-rule="required"&gt;
+
+    &lt;!-- 指定错误提示和展示位置（弹出提示模式） --&gt;
+    &lt;input type="text" class="yw-validator" data-rule="required" data-msg="请输入内容" data-align="top"&gt;
+
+    &lt;!-- 多条目验证 --&gt;
+    &lt;input type="text" class="yw-validator" data-rule="required|length:6,16|number"
+        data-msg="请填写电话号码|电话号码必须为%d~%d位"&gt;
+
+    &lt;!-- 复选组的验证 --&gt;
+    &lt;div class="yw-validator" data-rule="checked:2"&gt;
+        &lt;input type="checkbox" value="1"/&gt; 标签1
+        &lt;input type="checkbox" value="2"/&gt; 标签2
+        &lt;input type="checkbox" value="3"/&gt; 标签3
+        &lt;input type="checkbox" value="4"/&gt; 标签4
+        &lt;input type="checkbox" value="5"/&gt; 标签5
+    &lt;/div&gt;
+&lt;/form&gt;
+</pre>
+<pre class="prettyprint linenums">
+// js中指定元素调用
+$('#demo').validate({
+    popError: true, // 使用弹出式错误提示
+    func: {// 定义验证函数
+        valid: function(val) {
+            return val%2==0;
+        }
+    }
+});
+</pre>
+                            <div class="space"></div>
+                            <form method="post" class="row" id="demo2">
+                                <div class="form-group col-xs-12">
+                                    姓名：<input type="text" class="yw-validator align-middle inline input-xlarge"
+                                              data-rule="required" data-msg="此项不能为空">
+                                    <span class="yw-error-input"></span>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    电话：<input type="text" class="yw-validator align-middle inline input-xlarge"
+                                              data-rule="required|length:6,16|number" data-msg="请填写电话号码|电话号码必须为%d~%d位">
+                                    <span class="yw-error-input"></span>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    邮编：<input type="text" class="yw-validator align-middle inline input-xxlarge"
+                                              data-rule="length:6," data-msg="长度不能少于%d">
+                                    <span class="yw-error-input"></span>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    价格：<input type="text" class="yw-validator align-middle inline input-xlarge"
+                                              data-rule="min:0.00" data-msg="价格必须大于0" value="-5">
+                                    <span class="yw-error-input"></span>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    分类：<input type="text" class="yw-validator align-middle inline input-large"
+                                              data-rule="max:3" data-msg="不能大于%d" value="12" data-align="top">
+                                    <span class="yw-error-input"></span>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    等级：
+                                    <div class="yw-validator inline" data-rule="selected">
+                                        <select class="input-large">
+                                            <option value="">请选择</option>
+                                            <option value="1">Level 1</option>
+                                            <option value="2">Level 2</option>
+                                            <option value="3">Level 3</option>
+                                        </select>
+                                    </div>
+                                    <span class="yw-error-input"></span>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    编码：<input type="text" class="yw-validator align-middle inline input-xlarge"
+                                              data-rule="number">
+                                    <span class="yw-error-input"></span>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    邮箱：<input type="text" class="yw-validator align-middle inline input-xlarge"
+                                              data-rule="email">
+                                    <span class="yw-error-input"></span>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    规则：<input type="text" class="yw-validator align-middle inline input-xlarge"
+                                              data-rule="func:valid" data-msg="请输入一个偶数">
+                                    <span class="yw-error-input"></span>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    日期：
+                                    <div class="yw-validator inline" data-rule="checked:2">
+                                        <div class="form-group radio-inline no-padding">
+                                            <label>
+                                                <input type="checkbox" class="ace">
+                                                <span class="lbl"> 星期一</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-group radio-inline">
+                                            <label>
+                                                <input type="checkbox" class="ace">
+                                                <span class="lbl"> 星期二</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-group radio-inline">
+                                            <label>
+                                                <input type="checkbox" class="ace">
+                                                <span class="lbl"> 星期三</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-group radio-inline">
+                                            <label>
+                                                <input type="checkbox" class="ace">
+                                                <span class="lbl"> 星期四</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-group radio-inline">
+                                            <label>
+                                                <input type="checkbox" class="ace">
+                                                <span class="lbl"> 星期五</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-group radio-inline">
+                                            <label>
+                                                <input type="checkbox" class="ace">
+                                                <span class="lbl"> 星期六</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-group radio-inline">
+                                            <label>
+                                                <input type="checkbox" class="ace">
+                                                <span class="lbl"> 星期日</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <span class="yw-error-input"></span>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    性别：
+                                    <div class="yw-validator inline" data-rule="checked:1" data-msg="请选择性别">
+                                        <div class="form-group radio-inline no-padding">
+                                            <label>
+                                                <input name="sex" type="radio" class="ace">
+                                                <span class="lbl"> 男</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-group radio-inline">
+                                            <label>
+                                                <input name="sex" type="radio" class="ace">
+                                                <span class="lbl"> 女</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-group radio-inline">
+                                            <label>
+                                                <input name="sex" type="radio" class="ace">
+                                                <span class="lbl"> 人妖</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <span class="yw-error-input"></span>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    描述：<textarea class="yw-validator align-middle inline input-xxlarge" rows="5"
+                                                 data-rule="required"></textarea>
+                                    <span class="yw-error-input"></span>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    <button type="submit" class="btn btn-info btn-sm">
+                                        <i class="ace-icon fa fa-search"></i>
+                                        搜索
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="general-param">
+                <div class="widget-box col-sm-10">
+                    <div class="widget-header widget-header-flat">
+                        <h4 class="widget-title smaller">参数</h4>
+                    </div>
+                    <div class="widget-body">
+                        <div class="widget-main">
+                            <blockquote>
+                                <p class="lighter line-height-125 text-primary">
+                                    提交整个表单时会自动验证。每个验证的表单元素需要增加类名“yw-validator”。
+                                </p>
+                            </blockquote>
+                            <table class="table table-bordered table-striped js-options-table">
+                                <tr>
+                                    <th>标签参数名称</th>
+                                    <th>默认值</th>
+                                    <th>描述</th>
+                                    <th>可能的值</th>
+                                </tr>
+                                <tr>
+                                    <td>data-rule</td>
+                                    <td>无验证</td>
+                                    <td>验证规则</td>
+                                    <td>required，number，length:\d*,\d*，...</td>
+                                </tr>
+                                <tr>
+                                    <td>data-msg</td>
+                                    <td>默认错误提示</td>
+                                    <td>遇到错误时的提示信息</td>
+                                    <td>任意字符串，%d替代替换字符</td>
+                                </tr>
+                                <tr>
+                                    <td>data-align</td>
+                                    <td>right</td>
+                                    <td>提示信息展示的位置，仅气泡模式有效</td>
+                                    <td>top，right，left，bottom</td>
+                                </tr>
+                            </table>
+                            <blockquote>
+                                <p class="lighter line-height-125 text-primary">
+                                    以下为验证规则列表：
+                                </p>
+                            </blockquote>
+                            <table class="table table-bordered table-striped js-options-table">
+                                <tr>
+                                    <th>规则名称</th>
+                                    <th>语法</th>
+                                    <th>描述</th>
+                                </tr>
+                                <tr>
+                                    <td>required</td>
+                                    <td>required</td>
+                                    <td>此项必须填写，两端空格会被忽略，只有空格也被认为是未填写</td>
+                                </tr>
+                                <tr>
+                                    <td>number</td>
+                                    <td>number</td>
+                                    <td>必须是数字格式</td>
+                                </tr>
+                                <tr>
+                                    <td>email</td>
+                                    <td>email</td>
+                                    <td>必须是邮箱格式</td>
+                                </tr>
+                                <tr>
+                                    <td>length</td>
+                                    <td>length:(\d*),(\d*)</td>
+                                    <td>长度需要在$1和$2之间</td>
+                                </tr>
+                                <tr>
+                                    <td>max</td>
+                                    <td>max:(\d*)</td>
+                                    <td>最大值为$1</td>
+                                </tr>
+                                <tr>
+                                    <td>min</td>
+                                    <td>min:(\d*)</td>
+                                    <td>最小值为$1</td>
+                                </tr>
+                                <tr>
+                                    <td>func</td>
+                                    <td>func:([_\c\d]+)</td>
+                                    <td>使用函数$1对输入验证，通过js参数传入</td>
+                                </tr>
+                                <tr>
+                                    <td>selected</td>
+                                    <td>selected</td>
+                                    <td>下拉列表必须选中，验证规则需要放在外层元素上</td>
+                                </tr>
+                                <tr>
+                                    <td>checked</td>
+                                    <td>checked:(\d+)</td>
+                                    <td>单选或复选框必须选中$1个，验证规则需要放在外层元素上</td>
+                                </tr>
+                            </table>
+                            <blockquote>
+                                <p class="lighter line-height-125 text-primary">
+                                    提交整个表单时会自动验证。每个验证的表单元素需要增加类名“yw-validator”。
+                                </p>
+                            </blockquote>
+                            <table class="table table-bordered table-striped js-options-table">
+                                <tr>
+                                    <th>标签参数名称</th>
+                                    <th>默认值</th>
+                                    <th class="width-30">描述</th>
+                                    <th>可能的值</th>
+                                </tr>
+                                <tr>
+                                    <td>popError</td>
+                                    <td>false</td>
+                                    <td>是否采用弹出气泡提示</td>
+                                    <td>boolean</td>
+                                </tr>
+                                <tr>
+                                    <td>parentClass</td>
+                                    <td>.yw-valid-wrap</td>
+                                    <td>表单包裹元素，用于错误展示，不填时寻找的是yw-validator父元素，错误展示在此元素下的errorClass中</td>
+                                    <td>任意jQuery可用元素选择器</td>
+                                </tr>
+                                <tr>
+                                    <td>errorClass</td>
+                                    <td>.yw-error-input</td>
+                                    <td>表单错误展示元素，用于错误展示</td>
+                                    <td>任意jQuery可用元素选择器</td>
+                                </tr>
+                                <tr>
+                                    <td>func</td>
+                                    <td>{}</td>
+                                    <td>func过滤条件时用于传入定义的验证方法</td>
+                                    <td>js对象，指定方法集</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>By liuqiang@yuewen.com # Version 2017.11.23</p>
+        </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="static/js/ace.min.js"></script>
+<script type="text/javascript" src="static/js/ace-elements.js"></script><!--ace组件-->
+
+<script type="text/javascript" src="static/js/jquery.scrollUp.min.js"></script><!--滚到顶部-->
+<script type="text/javascript" src="static/js/prettify.js"></script><!--代码美化-->
+<script type="text/javascript" src="static/js/lib.js"></script><!--工具类-->
+<script type="text/javascript">
+    $(function() {
+	    var $menu = $('#side_menu');
+	    $menu.affix({
+		    offset: {
+			    top: function() {
+				    var top = $menu.offset().top,
+					    childTop = parseInt($menu.children(0).css('margin-top'), 10),
+					    height = $('.bs-docs-nav').height();
+				    return this.top = top - height - childTop;
+			    },
+			    bottom: function() {
+				    return this.bottom = 0;
+			    }
+		    }
+	    });
+
+	    $.scrollUp({
+		    scrollName: "scrollUp",
+		    topDistance: "300",
+		    topSpeed: 300,
+		    animation: "fade",
+		    animationInSpeed: 200,
+		    animationOutSpeed: 200,
+		    scrollText: '<i class="fa fa-angle-up"></i>',
+		    activeOverlay: !1
+	    });
+
+	    prettyPrint();
+
+	    $(function() {
+		    $('#demo1').validate({
+			    func: {
+				    valid: function(val) {
+					    return val%2==0;
+				    }
+			    }
+		    });
+		    $('#demo2').validate({
+                popError: true,
+			    func: {
+				    valid: function(val) {
+					    return val%2==0;
+				    }
+			    }
+		    });
+	    });
+    });
+</script><!--本文档专属js-->
+</body>
+</html>
