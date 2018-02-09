@@ -3,7 +3,6 @@ THANKS GITHUB TO THIS SPACE. HERE ARE WHAT WE NEED.
 
 ## 养生
 
-
 ### 每日需要的热量
 ```markdown
 1. 计算标准体重 身高-105=体重（KG）
@@ -30,7 +29,6 @@ THANKS GITHUB TO THIS SPACE. HERE ARE WHAT WE NEED.
 
 
 ### 参照食物用量
-
 ```markdown
  1交换份 营养素分配量 
 - 烹调植物油 10g（1 份） (1勺)
@@ -48,15 +46,7 @@ THANKS GITHUB TO THIS SPACE. HERE ARE WHAT WE NEED.
 在总量中减去这些食物所供给的营养素。
 
 
-#### 每日餐饮量计算
-```markdown
-现取 1300kcal 作为其每日所需的总热量。
-1. 计算每天碳水化合物供给量 1300×60%（kcal）÷ 4（kcal/g）＝195（g）。 
-2. 计算每天蛋白质供给量 1300×15%（kcal）÷4（kcal/g）≈49（g）。
-3. 计算每天脂肪供给量 1300×25%（kcal）÷9（kcal/g）≈36（g）。
-   
-```
-#### 计算原理
+### 计算原理
 
 ```markdown
 食谱内容可计算如下：
@@ -73,6 +63,14 @@ THANKS GITHUB TO THIS SPACE. HERE ARE WHAT WE NEED.
 不足部分（36－18＝18g）由油脂类补足，每份油脂类含脂肪 10g，故需供给油脂类：18÷10≈2 份。
 ```
 
+#### 每日餐饮量计算
+```markdown
+现取 1300kcal 作为其每日所需的总热量。
+1. 计算每天碳水化合物供给量 1300×60%（kcal）÷ 4（kcal/g）＝195（g）。 
+2. 计算每天蛋白质供给量 1300×15%（kcal）÷4（kcal/g）≈49（g）。
+3. 计算每天脂肪供给量 1300×25%（kcal）÷9（kcal/g）≈36（g）。
+   
+```
 
 ## 培训
 
