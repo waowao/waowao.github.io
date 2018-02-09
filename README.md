@@ -4,14 +4,14 @@ THANKS GITHUB TO THIS SPACE. HERE ARE SOME WORK WE DID.
 
 ## 初级讲座系列
 ### 一 目标:了解网页
--1.Html格式及源码查看
--2.Html实例与编写
--3.MARKDOWN实例与编写
--4.文件上传与下载
+- 1.Html格式及源码查看
+- 2.Html实例与编写
+- 3.MARKDOWN实例与编写
+- 4.文件上传与下载
 ### 二 目标:简单绘图
--1.AutoCAD绘图
--2.Unity3D绘图
--3.其他
+- 1.AutoCAD绘图
+- 2.Unity3D绘图
+- 3.其他
 STRUCTURE ANALYSIS IS A BASIC TASK IN ENGINEERING DESIGN. 
 
 ```MARKDOWN
