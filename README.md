@@ -7,7 +7,7 @@ THANKS GITHUB TO THIS SPACE. HERE ARE SOME WORK WE DID.
 #### 一 目标:了解网页
 - 1. Html格式及源码查看
 ```MARKDOWN
-   打开网页，右键，选查看源码，就可以看到当前页面的Html格式源码
+   打开网页，右键，选查看网页源代码，就可以看到当前页面的Html格式源码
 ```
 - 2. Html实例与编写
 
@@ -20,11 +20,12 @@ THANKS GITHUB TO THIS SPACE. HERE ARE SOME WORK WE DID.
 - 2. Unity3D绘图
 - 3. 其他
 
-1. Html格式及源码查看
-打开网页，右键，选查看源码
+## 养生
+### 糖尿病人每日食谱计算
 
 ```markdown
-STRUCTURE ANALYSIS IS A BASIC TASK IN ENGINEERING DESIGN. 
+1. 计算标准体重 身高-105=体重（KG） 如： 165－105＝60（kg）， 175－105＝70（kg）
+2. 判断体形 （体重-标准体重）/标准体重 >20%%  属肥胖。
 ```
 
 ```MARKDOWN
