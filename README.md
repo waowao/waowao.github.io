@@ -6,6 +6,9 @@ THANKS GITHUB TO THIS SPACE. HERE ARE SOME WORK WE DID.
 ### 初级讲座系列
 #### 一 目标:了解网页
 - 1. Html格式及源码查看
+```MARKDOWN
+打开网页，右键，选查看源码
+```
 - 2. Html实例与编写
 - 3. MARKDOWN实例与编写
 - 4. 文件上传与下载
