@@ -143,5 +143,6 @@ THANKS GITHUB TO THIS SPACE. HERE ARE WHAT WE NEED.
 - 3. 其他
 
 #### 三 目标:公式
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
-圆的面积$ S= \sigma *\Sigma (\alhpa , \pi r^2 ) $ 
+
+1.	使用\alpha、\beta、\gamma
+2. 圆的面积$ S= \sigma *\Sigma (\alhpa , \pi r^2 ) $ 
