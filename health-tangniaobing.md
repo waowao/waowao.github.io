@@ -1,7 +1,7 @@
 # WAOWAO
 THANKS GITHUB TO THIS SPACE. HERE ARE WHAT WE NEED. 
-### [RETURN](https://github.com/waowao/waowao.github.io/blob/master/readme.md/)
-### [LEARNINGMD](https://github.com/waowao/waowao.github.io/blob/master/learningmd.md/)
+### [RETURN](https://github.com/waowao/waowao.github.io/blob/master/README.md/)
+### [LEARNINGMD](https://github.com/waowao/waowao.github.io/blob/master/learn-md.md/)
 
 ## 养生
 
