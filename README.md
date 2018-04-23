@@ -1,10 +1,10 @@
 # WAOWAO
 THANKS GITHUB TO THIS SPACE. HERE ARE WHAT WE NEED. 
 
-## [养生](https://github.com/waowao/waowao.github.io/blob/master/health-tangniaobing.md"养生-糖尿病")
+## [HEALTH](https://github.com/waowao/waowao.github.io/blob/master/health-tangniaobing.md/)
 
   
-## 培训
+## LEARNING
 
 ### 初级讲座系列
 
