@@ -176,55 +176,9 @@
 4、北京大学信息学体验营简章发布，招生对象为、各科成绩名列前茅，NOIP联赛中获得优异成绩的学生\
 5、北京大学外语类保送生简章发布，招生对象为具有保送资格的外国语类保送生\
 6、清华大学外语类保送生简章发布，招生对象为具有保送资格的外国语类保送生\
-附：2018五大学科竞赛竞赛时间预告\
-![http://img1.jinciwei.cn/mmbiz\_png/ZjVbwNTGOgqibqPoXotOCv5bQO61sjTAVlJZTfYebXYlBrhNYjKVlXJzSsGjWWhD6Urf9GJzib5YVjjDYz3qNlqw/640?wx\_fmt=png](media/image1.png){width="6.666666666666667in"
-height="7.575in"}
 
-  [理学部](http://fs.pku.edu.cn/)                                                                                                                                                                                                                              
-  --------------------------------------------- ---------------------------------------------------------------- ------------------------------------------------------------------------- ------------------------------------------------------------------- -----------------------------------------------------------------
-                                                [[数学科学学院]{.underline}](http://www.math.pku.edu.cn/)        [[物理学院]{.underline}](http://www.phy.pku.edu.cn/)                      [[化学与分子工程学院]{.underline}](http://www.chem.pku.edu.cn/)     [[生命科学学院]{.underline}](http://www.bio.pku.edu.cn/)
-                                                [[城市与环境学院]{.underline}](http://www.ues.pku.edu.cn/)       [[地球与空间科学学院]{.underline}](http://sess.pku.edu.cn/)               [[心理与认知科学学院]{.underline}](http://www.psy.pku.edu.cn/)      [[建筑与景观设计学院]{.underline}](http://www.cala.pku.edu.cn/)
-  [信息与工程科学部](http://fies.pku.edu.cn/)                                                                                                                                                                                                                  
-                                                [[信息科学技术学院]{.underline}](http://eecs.pku.edu.cn/)        [[工学院]{.underline}](http://www.coe.pku.edu.cn/)                        [[计算机科学技术研究所]{.underline}](http://www.icst.pku.edu.cn/)   [[软件与微电子学院]{.underline}](http://www.ss.pku.edu.cn/)
-                                                [[环境科学与工程学院]{.underline}](http://cese.pku.edu.cn/)      [[软件工程国家工程研究中心]{.underline}](http://se.pku.edu.cn/)                                                                               
-  [人文学部](http://fh.pku.edu.cn/)                                                                                                                                                                                                                            
-                                                [[中国语言文学系]{.underline}](http://chinese.pku.edu.cn/)       [[历史学系]{.underline}](http://www.hist.pku.edu.cn/)                     [[考古文博学院]{.underline}](http://archaeology.pku.edu.cn/)        [[哲学系（宗教学系）]{.underline}](http://www.phil.pku.edu.cn/)
-                                                [[外国语学院]{.underline}](http://sfl.pku.edu.cn/)               [[艺术学院]{.underline}](http://www.art.pku.edu.cn/)                      [[对外汉语教育学院]{.underline}](http://hanyu.pku.edu.cn/)          [[歌剧研究院]{.underline}](http://opera.pku.edu.cn/)
-  [社会科学学部](http://fss.pku.edu.cn/)                                                                                                                                                                                                                       
-                                                [[国际关系学院]{.underline}](http://www.sis.pku.edu.cn/)         [[法学院]{.underline}](http://www.law.pku.edu.cn/)                        [[信息管理系]{.underline}](http://www.im.pku.edu.cn/)               [[社会学系]{.underline}](http://www.shehui.pku.edu.cn/)
-                                                [[政府管理学院]{.underline}](http://www.sg.pku.edu.cn/)          [[马克思主义学院]{.underline}](http://marxism.pku.edu.cn/)                [[教育学院]{.underline}](http://www.gse.pku.edu.cn/)                [[新闻与传播学院]{.underline}](http://sjc.pku.edu.cn/)
-                                                [[体育教研部]{.underline}](http://pe.pku.edu.cn/)                [[新媒体研究院]{.underline}](http://snm.pku.edu.cn/)                                                                                          
-  [经济与管理学部](http://fem.pku.edu.cn/)                                                                                                                                                                                                                     
-                                                [[经济学院]{.underline}](http://econ.pku.edu.cn/)                [[光华管理学院]{.underline}](http://www.gsm.pku.edu.cn/)                  [[人口研究所]{.underline}](http://ipr.pku.edu.cn/)                  [[国家发展研究院]{.underline}](http://www.nsd.pku.edu.cn/cn)
-  跨学科类                                                                                                                                                                                                                                                     
-                                                [[元培学院]{.underline}](http://yuanpei.pku.edu.cn/)             [[燕京学堂]{.underline}](http://yenchingacademy.org/)                     [[先进技术研究院]{.underline}](http://www.ati.pku.edu.cn/)          [[前沿交叉学科研究院]{.underline}](http://www.aais.pku.edu.cn/)
-                                                [[中国社会科学调查中心]{.underline}](http://www.isss.edu.cn/)    [[分子医学研究所]{.underline}](http://www.imm.pku.edu.cn/)                [[科维理天文研究所]{.underline}](http://kiaa.pku.edu.cn/)           [[核科学与技术研究院]{.underline}](http://inst.pku.edu.cn/)
-                                                [[北京国际数学研究中心]{.underline}](http://bicmr.pku.edu.cn/)   [[海洋研究院]{.underline}](http://ocean.pku.edu.cn/)                      [[现代农学院]{.underline}](http://www.saas.pku.edu.cn/)             [[人文社会科学研究院]{.underline}](http://www.ihss.pku.edu.cn/)
-  [深圳研究生院](http://www.pkusz.edu.cn/)                                                                                                                                                                                                                     
-                                                [[信息工程学院]{.underline}](http://www.ece.pku.edu.cn/)         [[化学生物学与生物技术学院]{.underline}](http://www.scbb.pkusz.edu.cn/)   [[环境与能源学院]{.underline}](http://see.pkusz.edu.cn/)            [[城市规划与设计学院]{.underline}](http://urban.pkusz.edu.cn/)
-                                                [[新材料学院]{.underline}](http://sam.pkusz.edu.cn/)             [[汇丰商学院]{.underline}](http://www.phbs.pku.edu.cn/)                   [[国际法学院]{.underline}](http://stl.pku.edu.cn/)                  [[人文社会科学学院]{.underline}](http://rw.pkusz.edu.cn/info/)
 
 北京30余所高中2017年高考成绩汇总
-
-北京30余所高中2017年高考成绩汇总
-
-[[http://gaokao.eol.cn/]{.underline}](http://gaokao.eol.cn/)　　来源：新浪教育　　2017-06-25　　
-
-![http://img.eol.cn/images/cer.net/gaokao/2012/2012053111.gif](media/image2.gif){width="1.4625in"
-height="0.6229166666666667in"}![http://img.eol.cn/images/cer.net/gaokao/2014/page-syl.jpg](media/image3.jpeg){width="1.4625in"
-height="0.6229166666666667in"}
-
-[[用数据权威解读高考]{.underline}](https://www.eol.cn/html/g/ssgkzt/index.shtml)
-
-[[2017高考人数及录取率]{.underline}](http://gaokao.eol.cn/news/201708/t20170823_1549178.shtml)
-
-[["双一流"大学及学科]{.underline}](http://www.eol.cn/html/g/wap/double/index.shtml)
-
-[[高校国家重点学科名单]{.underline}](http://www.eol.cn/html/g/wap/gjzdxk/index.shtml)
-
-[[各地高考一分一段表]{.underline}](http://www.eol.cn/html/g/gkfsd/index.shtml)
-
-[[2018新增及撤销专业]{.underline}](https://www.eol.cn/html/g/wap/gxxzzy/index.html)
 
 　　2017年北京各校"高考喜报"频频传出，中小学家长圈现将人大附中、十一、八中、二中、人朝等已经出炉的30余所中学的高考成绩大起底分享给各位家长们，快来瞧瞧你关注的学校成绩如何，为孩子中考的择校有个心理准备。（注：
 以下学校排名不分先后）
