@@ -6,7 +6,7 @@ THANKS GITHUB TO THIS SPACE. HERE ARE WHAT WE NEED.
   
 ## LEARNING
 
-### 初级讲座系列
+### 初级
 
 #### 一 目标:了解网页
 - 1. Html格式及源码查看
